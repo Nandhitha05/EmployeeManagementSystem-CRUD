@@ -11,7 +11,7 @@ This is a simple Java-based Employee Management System built using JDBC (Java Da
 📦 Clean object-oriented structure (Employee, EmployeeImpl, EmployeeDao)
 
 🛠 Technologies Used:
-1. Java (JDK 17+ recommended)
+1. Java (Version- JDK 21)
 2. JDBC
 3. MySQL
 4. IntelliJ IDEA
