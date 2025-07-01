@@ -1,11 +1,8 @@
 package employee;
-
 import java.sql.*;
 import java.util.Scanner;
-
 public class EmployeeImpl implements EmployeeDao {
     Connection con;
-
     @Override
     public void createEmployee() {
         con = DBConnection.createDBConnection();
@@ -15,7 +12,7 @@ public class EmployeeImpl implements EmployeeDao {
             Scanner sc = new Scanner(System.in);
             System.out.print("Enter Employee Id: ");
             int id = sc.nextInt();
-            sc.nextLine(); // Consume newline
+            sc.nextLine(); 
             System.out.print("Enter Employee Name: ");
             String name = sc.nextLine();
             System.out.print("Enter Employee Salary: ");
@@ -50,7 +47,7 @@ public class EmployeeImpl implements EmployeeDao {
         con = DBConnection.createDBConnection();
         if (con == null) {
             System.out.println("Failed to establish a database connection.");
-            return; // Exit the method if the connection is null
+            return; 
         }
         try {
             String query = "SELECT * FROM employee";
@@ -80,8 +77,8 @@ public class EmployeeImpl implements EmployeeDao {
         try {
             String query = "SELECT * FROM employee WHERE id = ?";
             PreparedStatement pstm = con.prepareStatement(query);
-            pstm.setInt(1, id); // Set the parameter before executing
-            ResultSet rs = pstm.executeQuery(); // Execute after setting parameters
+            pstm.setInt(1, id); 
+            ResultSet rs = pstm.executeQuery();
             if (rs.next()) {
                 String name = rs.getString("name");
                 double salary = rs.getDouble("salary");
