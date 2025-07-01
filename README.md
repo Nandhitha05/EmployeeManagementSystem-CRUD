@@ -17,13 +17,6 @@ This is a simple Java-based Employee Management System built using JDBC (Java Da
 4. IntelliJ IDEA
 5. Git & GitHub
 
-📁 Project Structure
-employee/
-├── Employee.java          # Model class
-├── EmployeeDao.java       # Interface for operations
-├── EmployeeImpl.java      # Implements DAO, handles JDBC logic
-├── DBConnection.java      # Database connection logic
-└── Main.java              # Entry point with menu-driven UI
 
 🗃️ Database Setup
 Database: EmployeeDB
@@ -38,9 +31,9 @@ Table: employee
     age INT
 );
 
-▶️ How to Run
-->Import the project in IntelliJ
-->Update your MySQL credentials in DBConnection.java
-->Run Main.java
-->Follow the CLI prompts
+How to Run?
+1. Import the project in IntelliJ
+2. Update your MySQL credentials in DBConnection.java
+3. Run Main.java
+4. Follow the CLI prompts
 
