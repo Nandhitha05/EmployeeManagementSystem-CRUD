@@ -2,13 +2,13 @@
 This is a simple Java-based Employee Management System built using JDBC (Java Database Connectivity). It performs basic CRUD operations (Create, Read, Update, Delete) on an employee table in a MySQL database.
 
 🚀 Features:
-✅ Add new employee records
-🔍 View all employee details
-🔎 Search employee by ID
-✏️ Update employee name by ID
-❌ Delete employee by ID
-💾 Uses MySQL for data storage
-📦 Clean object-oriented structure (Employee, EmployeeImpl, EmployeeDao)
+1. Add new employee records
+2. View all employee details
+3. Search employee by ID
+4. Update employee name by ID
+5. Delete employee by ID
+6. Uses MySQL for data storage
+7. Clean object-oriented structure (Employee, EmployeeImpl, EmployeeDao)
 
 🛠 Technologies Used:
 1. Java (Version- JDK 21)
