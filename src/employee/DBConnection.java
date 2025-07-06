@@ -8,7 +8,7 @@ public class DBConnection {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/EmployeeDB";
             String username = "root";
-            String password = "nandhu@123";
+            String password = "***********";
             con = DriverManager.getConnection(url, username, password);
         } catch (Exception exp) {
             exp.printStackTrace();
